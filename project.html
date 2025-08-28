@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects - Tanisha Beniwal</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #1a1a1a;
+      color: #fff;
+    }
+
+    .portfolio-container {
+      display: flex;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    .navlist {
+      position: fixed;
+      top: 50%;
+      left: 1rem;
+      transform: translateY(-50%);
+      list-style: none;
+    }
+
+    .navlist li {
+      margin: 1rem 0;
+    }
+
+    .navlist a {
+      color: white;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+
+    .left-container {
+      flex: 1;
+      padding: 4rem 5rem;
+      z-index: 2;
+    }
+
+    .icons {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2rem;
+    }
+
+    .icons a {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      color: white;
+      transition: 0.3s;
+    }
+
+    .icons a:hover {
+      color: #5db9ee;
+    }
+
+    .projects-section h2 {
+      font-size: 2.5rem;
+      color: #5db9ee;
+      margin-bottom: 1.5rem;
+      margin-left: 5rem;
+    }
+
+    .projects-section ul {
+      padding-left: 1.5rem;
+    }
+
+    .projects-section ul li {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+      position: relative;
+      padding-left: 0.5rem;
+      transition: all 0.3s ease;
+      border-left: 3px solid transparent;
+      margin-left: 5rem;
+    }
+
+    .projects-section ul li:hover {
+      color: #5db9ee;
+      font-weight: 500;
+      transform: translateX(5px);
+      border-left: 3px solid #5db9ee;
+      cursor: pointer;
+     
+    }
+
+    .btn-container {
+      margin-top: 2rem;
+    }
+
+    .btn-container button {
+      padding: 0.6rem 1.5rem;
+      background-color: #5db9ee;
+      border: none;
+      border-radius: 8px;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-left: 5rem;
+    }
+
+    .btn-container button:hover {
+      background-color: #3a97d4;
+    }
+
+    .right-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .profile-pic-circle {
+      background-image: url('tanishaprofilephoto - Copy.jpg');
+      background-size: cover;
+      background-position: center;
+      width: 25rem;
+      height: 25rem;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      box-shadow:
+        0 0 1rem #fff,
+        inset 0 0 1rem #fff,
+        0 0 2rem #3877FF,
+        inset 0 0 2rem #3877FF,
+        0 0 4rem #3877FF,
+        inset 0 0 4rem #3877FF;
+    }
+
+    @media screen and (max-width: 768px) {
+      .portfolio-container {
+        flex-direction: column;
+      }
+
+      .left-container, .right-container {
+        padding: 2rem;
+      }
+
+      .right-container {
+        margin-top: 2rem;
+      }
+
+      .profile-pic-circle {
+        width: 18rem;
+        height: 18rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="portfolio-container">
+
+  <!-- NAVBAR -->
+  <ul class="navlist">
+    <li><a href="portfolio.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="training.html">Training</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="projects.html" class="active">Projects</a></li>
+  </ul>
+
+  <!-- LEFT CONTAINER -->
+  <div class="left-container">
+    <div class="icons">
+      <a href="https://github.com/Tanisha-Beniwal"><i class="fa-brands fa-github"></i></a>
+      <a href="mailto:tanishabeniwal906@gmail.com"><i class="fa-solid fa-at"></i></a>
+      <a href="tel:8433418140"><i class="fa-solid fa-phone-volume"></i></a>
+      <a href="https://www.linkedin.com/in/tanisha-beniwal-8a60ab251"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+
+    <div class="projects-section">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Personal Portfolio</strong>: A website to showcase my skills and projects.</li>
+        <li><strong>A Trending News Website</strong>: Shows the latest news with integrated API.</li>
+        <li><strong>A Classroom Application</strong>: A responsive app where students can mark their progress with quizzes.</li>
+      </ul>
+
+      <div class="btn-container">
+        <a href="portfolio.html"><button>← Back to Home</button></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT CONTAINER -->
+  <div class="right-container">
+    <div class="profile-pic-circle"></div>
+  </div>
+
+</div>
+
+</body>
+</html>
+
+
+
